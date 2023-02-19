@@ -11,6 +11,10 @@
 		2C459CD1299F60C3007AE586 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C459CD0299F60C3007AE586 /* ContentView.swift */; };
 		2C459CD3299F60C5007AE586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C459CD2299F60C5007AE586 /* Assets.xcassets */; };
 		2C459CD6299F60C5007AE586 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C459CD5299F60C5007AE586 /* Preview Assets.xcassets */; };
+		2C459CDD299F60FD007AE586 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C459CDC299F60FD007AE586 /* Model.swift */; };
+		2C459CE2299FCA91007AE586 /* ItemsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C459CE0299FCA91007AE586 /* ItemsModel.xcdatamodeld */; };
+		2C459CE4299FCADE007AE586 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C459CE3299FCADE007AE586 /* DataController.swift */; };
+		2C459CE6299FE12E007AE586 /* InvoiceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C459CE5299FE12E007AE586 /* InvoiceScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		2C459CD0299F60C3007AE586 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C459CD2299F60C5007AE586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C459CD5299F60C5007AE586 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C459CDC299F60FD007AE586 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2C459CE1299FCA91007AE586 /* ItemsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ItemsModel.xcdatamodel; sourceTree = "<group>"; };
+		2C459CE3299FCADE007AE586 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2C459CE5299FE12E007AE586 /* InvoiceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +61,12 @@
 			children = (
 				2C459CCE299F60C3007AE586 /* ZoobiTask4App.swift */,
 				2C459CD0299F60C3007AE586 /* ContentView.swift */,
+				2C459CDC299F60FD007AE586 /* Model.swift */,
+				2C459CE3299FCADE007AE586 /* DataController.swift */,
+				2C459CE0299FCA91007AE586 /* ItemsModel.xcdatamodeld */,
 				2C459CD2299F60C5007AE586 /* Assets.xcassets */,
 				2C459CD4299F60C5007AE586 /* Preview Content */,
+				2C459CE5299FE12E007AE586 /* InvoiceScreen.swift */,
 			);
 			path = ZoobiTask4;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C459CE4299FCADE007AE586 /* DataController.swift in Sources */,
+				2C459CDD299F60FD007AE586 /* Model.swift in Sources */,
 				2C459CD1299F60C3007AE586 /* ContentView.swift in Sources */,
+				2C459CE2299FCA91007AE586 /* ItemsModel.xcdatamodeld in Sources */,
 				2C459CCF299F60C3007AE586 /* ZoobiTask4App.swift in Sources */,
+				2C459CE6299FE12E007AE586 /* InvoiceScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -277,6 +293,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C459CE0299FCA91007AE586 /* ItemsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C459CE1299FCA91007AE586 /* ItemsModel.xcdatamodel */,
+			);
+			currentVersion = 2C459CE1299FCA91007AE586 /* ItemsModel.xcdatamodel */;
+			path = ItemsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2C459CC3299F60C3007AE586 /* Project object */;
 }

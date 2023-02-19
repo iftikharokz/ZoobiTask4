@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct ZoobiTask4App: App {
+    @StateObject var dataController = DataController()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ContentView()
+            }
+            .environment(\.managedObjectContext, dataController.container.viewContext)
+            .navigationViewStyle(.stack)
+            
         }
     }
 }
